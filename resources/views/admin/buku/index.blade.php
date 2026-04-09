@@ -49,7 +49,7 @@
                             <td>{{ $item->penulis }}</td>
                             <td>{{ $item->penerbit }}</td>
                             <td>{{ $item->tahun_terbit }}</td>
-                            <td>{{ $item->stok }}</td>
+                            <td>{{ $item->stok == 0 ? 'kosong' : $item->stok }}</td>
                             <td class="text-muted small">{{ $item->deskripsi ? \Illuminate\Support\Str::limit($item->deskripsi, 60) : '-' }}</td>
                             <td>
                                 @php
